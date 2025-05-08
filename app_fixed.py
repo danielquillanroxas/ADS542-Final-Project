@@ -2715,8 +2715,7 @@ def render_documentation():
         st.markdown("""
         <div class="text">
             <h3 style="margin-top: 0;">Model Selection</h3>
-            <p>Multiple classification algorithms were evaluated to identify the best performer for this task. Based on the evaluation metrics,
-            the XGBoost model was selected for deployment due to its superior performance, with a high recall (81%) and good precision (57%) for detecting subscribers.</p>
+            <p>Multiple classification algorithms were evaluated for this task, with Logistic Regression ultimately selected for deployment despite XGBoost showing slightly better overall metrics. This business decision prioritizes customer acquisition (89% recall vs XGBoost's 81%), recognizing that in banking, the lifetime value of customers extends beyond the initial term deposit. While precision is lower (44% vs 57%), the economics of capturing significantly more potential subscribers outweighs the additional marketing costs from false positives, maximizing long-term portfolio value.</p>
         </div>
         """, unsafe_allow_html=True)
         
