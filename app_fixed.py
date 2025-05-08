@@ -492,6 +492,9 @@ def apply_custom_css():
     st.markdown(f"""
     <style>
         /* General styling */
+        html, body, [class*="css"]: {{
+            font-size: 14px;
+        }}
         .stApp {{
             background-color: {bg_color};
             color: {text_color};
@@ -512,18 +515,19 @@ def apply_custom_css():
             border-bottom: 2px solid {primary_color};
             padding-bottom: 0.75rem;
             letter-spacing: -0.02em;
+            font-size: 1.8rem !important;
             text-align: center;
         }}
         
         h2 {{
-            font-size: 1.5rem;
+            font-size: 1.5rem !important;
             margin-top: 1.2rem;
             margin-bottom: 0.75rem;
             color: {secondary_color};
         }}
         
         h3 {{
-            font-size: 1.25rem;
+            font-size: 1.1rem !important;
             margin-top: 1.2rem;
             margin-bottom: 0.5rem;
             color: {secondary_color};
