@@ -999,6 +999,13 @@ def main():
         except Exception as e:
             # If the logo can't be loaded, show a text header instead
             st.markdown("<h2 style='color: white; text-align: center;'>University Logo</h2>", unsafe_allow_html=True)
+        st.markdown("<h3 class='sidebar-text' style='text-align: center; margin: 0px 0;'>Navigation</h3>", unsafe_allow_html=True)
+        st.markdown("<div class='nav-section'>", unsafe_allow_html=True)
+        
+        nav_options = ["Dashboard", "Client Analysis", "Documentation"]
+        nav_selection = st.radio("Select Section", nav_options, label_visibility="collapsed")
+        
+        st.markdown("</div>", unsafe_allow_html=True)    
         
         # Title and course info FIRST
         st.markdown("<h2 class='sidebar-text' style='text-align: center; margin-top: 3px;'>Bank Term Deposit Prediction</h2>", unsafe_allow_html=True)
@@ -1007,13 +1014,7 @@ def main():
         st.markdown("<hr style='margin: 15px 0px;'>", unsafe_allow_html=True)
         
         # NAVIGATION SECTION - MOVED AFTER TITLE as requested
-        st.markdown("<h3 class='sidebar-text' style='text-align: center; margin: 0px 0;'>Navigation</h3>", unsafe_allow_html=True)
-        st.markdown("<div class='nav-section'>", unsafe_allow_html=True)
         
-        nav_options = ["Dashboard", "Client Analysis", "Documentation"]
-        nav_selection = st.radio("Select Section", nav_options, label_visibility="collapsed")
-        
-        st.markdown("</div>", unsafe_allow_html=True)
         
         st.markdown("<hr style='margin: 15px 0px;'>", unsafe_allow_html=True)
         
