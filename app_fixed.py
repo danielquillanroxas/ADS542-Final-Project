@@ -1098,7 +1098,7 @@ def render_dashboard():
     with col1:
         st.metric("Conversion Rate Increase", "32%", "versus traditional methods")
     with col2:
-        st.metric("Marketing Cost Reduction", "77.55%", "through targeted outreach")
+        st.metric("Marketing Cost Reduction", "77.18%", "through targeted outreach")
     with col3:
         st.metric("ROI Improvement", "7.1x", "compared to when not using the model")
     
