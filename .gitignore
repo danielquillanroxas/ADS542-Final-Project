@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+venv1/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+temp/
+tmp/
+
+# Large data files
+# Uncomment if you have large data files that shouldn't be in the repo
+# *.csv
+# *.xlsx
+
+# Credentials and secrets
+.env
+secrets.toml
+credentials.json
+config.ini
+*_key.json
+
+# Keep these files for Streamlit deployment
+# Note: Unlike your original .gitignore, we're NOT excluding:
+# - Model files (.pkl, .joblib) needed for the app to function
+# - Images (.png, .jpg) needed for UI
+# - .streamlit folder which may contain deployment configs
